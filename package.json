@@ -1,6 +1,6 @@
 {
   "name": "react-butin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A React component for displaying customizable buttons",
   "main": "build/index.js",
   "scripts": {

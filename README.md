@@ -9,7 +9,7 @@ First, install the package using npm:
 
 Then, require the package and use it like so:
 
-    const Button = require('react-butin');
+    import Button from "react-butin";
 
 Use in your React app like this:
 
