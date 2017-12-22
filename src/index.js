@@ -1,29 +1,29 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Button extends React.Component {
-  constructor(props) {
-    super(props)
-    this.button = {
-      display: 'inline-block',
-      borderRadius: '3px',
-      padding: '0.5rem 0',
-      margin: '0.5rem 1rem',
-      width: '11rem',
-      border: '2px solid white',
-      background: 'black',
-      color: 'white'
-    }
-  }
-  
-  componentWillMount() {
-    if (this.props.background) this.button.background = this.props.background;
-    if (this.props.color) this.button.color = this.props.color;
-    if (this.props.border) this.button.border = this.props.border;
-  }
+/**
+ * The simplest way to define a component is to write a JavaScript function.
+ * 
+ * So, we'll create a Javascript Function and name it "Button"
+ */
+function Button(props) {
+  return (
+    <button style={props}>{props.buttonName}</button>
+  )
+}
 
-  render() {
-    return <button style={this.button}>{this.props.buttonName}</button>
-  }
+/**
+ * Here we define the default properties for our React button component.
+ * It's just CSS.
+ */
+Button.defaultProps = {
+  display: 'inline-block',
+  borderRadius: '3px',
+  padding: '0.5rem 0',
+  margin: '0.5rem 1rem',
+  width: '11rem',
+  border: '2px solid white',
+  background: 'black',
+  color: 'white'
 }
 
 export default Button;
